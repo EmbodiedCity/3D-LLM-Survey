@@ -1,10 +1,328 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Hello GitHub Pages</title>
+    <meta name="description" content="How to Enable LLM with 3D Capacity? A Survey of Spatial Reasoning in LLM">
+    <meta name="keywords" content="LLM, 3D, Spatial Reasoning, Survey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Enable LLM with 3D Capacity? A Survey of Spatial Reasoning in LLM</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
 </head>
+
 <body>
-    <h1>你好，这是一个 GitHub Pages 网页</h1>
+
+    <section class="hero is-fullheight" style="background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);">
+        <div class="hero-body">
+            <div class="container is-fluid">
+                <div class="columns is-centered is-vcentered">
+                    <!-- Image on the left -->
+                    <div class="column is-half">
+                        <div class="head-image">
+                            <img draggable="false" src="static/images/overview.png" alt="Overview Image"
+                                class="teaser-image">
+                        </div>
+                    </div>
+
+                    <!-- Content on the right -->
+                    <div class="column is-half has-text-centered">
+                        <div class="content-wrapper">
+                            <h1 class="title is-1 publication-title">How to Enable LLM with 3D Capacity? A Survey of
+                                Spatial Reasoning in LLM</h1>
+
+                            <div class="icon-container" style="max-width: 800px; margin: 0 auto;">
+                                <div class="icon-item"
+                                    style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div style="text-align: left;"><strong>Structured Taxonomy</strong>: We provide a
+                                        novel perspective on LLM applications in 3D-related tasks through a structured
+                                        taxonomy categorizing research into three primary groups.</div>
+                                </div>
+                                <div class="icon-item"
+                                    style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div style="text-align: left;"><strong>Comprehensive Review</strong>: Building on
+                                        the proposed taxonomy, we systematically review current research progress on
+                                        LLMs for spatial reasoning tasks.</div>
+                                </div>
+                                <div class="icon-item"
+                                    style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div style="text-align: left;"><strong>Future Directions</strong>: We highlight
+                                        remaining limitations of existing works and suggest potential directions for
+                                        future research.</div>
+                                </div>
+                            </div>
+
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2504.05786"
+                                        class="external-link button is-normal is-rounded is-dark" target="_blank">
+                                        <span class="icon is-small">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>arXiv</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="byline">
+                    <div class="byline-container">
+                        <div class="byline-column">
+                            <h3>Authors</h3>
+                            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                                <p class="author-item">Jirong Zha <sup>1*</sup></p>
+                                <p class="author-item">Yuxuan Fan <sup>2*</sup></p>
+                                <p class="author-item">Xiao Yang <sup>2</sup></p>
+                                <p class="author-item">Chen Gao <sup>3†</sup></p>
+                                <p class="author-item">Xinlei Chen <sup>1†</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="byline-container">
+                        <div class="byline-column">
+                            <h3>Affiliations</h3>
+                            <p><sup>1</sup> Shenzhen International Graduate School, Tsinghua University</p>
+                            <p><sup>2</sup> The Hong Kong University of Science and Technology (Guangzhou)</p>
+                            <p><sup>3</sup> BNRist, Tsinghua University</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="byline-container">
+                        <div class="byline-column">
+                            <h3>Notes</h3>
+                            <p>*Equal contribution, †Corresponding author</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Abstract</h2>
+                    <p>
+                        3D spatial understanding is essential in real-world applications such as robotics, autonomous
+                        vehicles, virtual reality, and medical imaging. Recently, Large Language Models (LLMs), having
+                        demonstrated remarkable success across various domains, have been leveraged to enhance 3D
+                        understanding tasks, showing potential to surpass traditional computer vision methods. In this
+                        survey, we present a comprehensive review of methods integrating LLMs with 3D spatial
+                        understanding. We propose a taxonomy that categorizes existing methods into three branches:
+                        image-based methods deriving 3D understanding from 2D visual data, point cloud-based methods
+                        working directly with 3D representations, and hybrid modality-based methods combining multiple
+                        data streams. We systematically review representative methods along these categories, covering
+                        data representations, architectural modifications, and training strategies that bridge textual
+                        and 3D modalities. Finally, we discuss current limitations, including dataset scarcity and
+                        computational challenges, while highlighting promising research directions in spatial
+                        perception, multi-modal fusion, and real-world applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Overview</h2>
+                    <img src="./static/images/overview.png" alt="Overview"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        Large Language Models can acquire 3D spatial reasoning capabilities through various input
+                        sources including multi-view images, RGB-D images, point clouds, and hybrid modalities, enabling
+                        the processing and understanding of three-dimensional information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Taxonomy of 3D-LLM Methods</h2>
+                    <img src="./static/images/taxonomy.png" alt="Taxonomy"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        Our proposed taxonomy classifies 3D-LLM research into three main categories: Image-based spatial
+                        reasoning, Point cloud-based spatial reasoning, and Hybrid modality-based spatial reasoning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Methodology Overview</h2>
+                    <img src="./static/images/method.png" alt="Methodology"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        Our methodology framework illustrates the comprehensive approach to integrating LLMs with 3D
+                        spatial understanding across different modalities and alignment strategies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Image-based Spatial Reasoning</h2>
+                    <img src="./static/images/image.png" alt="Image-based approaches"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        Image-based spatial reasoning methods categorize based on input modalities: multi-view images,
+                        monocular images, RGB-D images, and 3D medical images. Each modality offers unique advantages
+                        for enhancing 3D understanding in Large Language Models.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Point Cloud-based Spatial Reasoning</h2>
+                    <img src="./static/images/point.png" alt="Point cloud-based approaches"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        Point cloud-based spatial reasoning employs three main alignment methods: Direct Alignment,
+                        Step-by-step Alignment, and Task-specific Alignment for integrating point cloud data with
+                        language models.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Hybrid Modality-based Spatial Reasoning</h2>
+                    <img src="./static/images/hybrid.png" alt="Hybrid modality-based approaches"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        Hybrid modality-based spatial reasoning integrates point clouds, images, and LLMs through
+                        Tightly Coupled and Loosely Coupled approaches, offering different trade-offs between
+                        integration and modularity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Summary of Models</h2>
+                    <img src="./static/images/models.png" alt="Summary of Models"
+                        style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px;">
+                        This table summarizes representative models across different categories of our taxonomy,
+                        highlighting their input modalities, key features, and applications in 3D spatial reasoning
+                        tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Challenges and Future Directions</h2>
+
+                    <h3 class="title is-4" style="margin-top: 30px;">Current Challenges</h3>
+                    <div class="content">
+                        <ul>
+                            <li><strong>Weak Spatial Reasoning:</strong> Limited acuity in 3D spatial understanding and
+                                fine-grained relationships, struggling with front/back distinctions and occluded object
+                                localization.</li>
+                            <li><strong>Data Scarcity:</strong> Lack of high-quality 3D-text paired datasets compared to
+                                abundant 2D resources, hindering robust model training.</li>
+                            <li><strong>Multimodal Integration:</strong> Challenges in fusing 3D data with other
+                                modalities due to structural differences and potential information loss.</li>
+                            <li><strong>Complex Task Definition:</strong> Need for frameworks supporting nuanced
+                                language-context inference in dynamic environments.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="title is-4" style="margin-top: 30px;">Future Directions</h3>
+                    <div class="content">
+                        <ul>
+                            <li><strong>Enhanced 3D Perception:</strong> Development of richer 3D-text datasets and
+                                improved model architectures for better geometric relationship encoding.</li>
+                            <li><strong>Multi-Modal Fusion:</strong> Tighter integration through unified latent spaces
+                                and attention mechanisms to preserve geometric and semantic details.</li>
+                            <li><strong>Cross-Scene Generalization:</strong> Open-vocabulary 3D understanding with
+                                large-scale pretraining and transfer learning paradigms.</li>
+                            <li><strong>Autonomous Systems:</strong> Applications in robotics, medical imaging,
+                                architectural design, and interactive education with environmental constraints.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{zha2025llm3d,
+  title={How to Enable LLM with 3D Capacity? A Survey of Spatial Reasoning in LLM},
+  author={Jirong Zha and Yuxuan Fan and Xiao Yang and Chen Gao and Xinlei Chen},
+  journal={IJCAI},
+  year={2025}
+}</code></pre>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+                                Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
